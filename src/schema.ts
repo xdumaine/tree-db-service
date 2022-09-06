@@ -94,7 +94,7 @@ export const typeDefs = gql`
   }
 
   type Query {
-    genera: [Genus!]
+    genera: [Genus!]!
     observations: [Observation]!
   }
 `;
