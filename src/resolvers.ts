@@ -19,12 +19,15 @@ export const resolvers: Resolvers = {
   Query: queryResolvers,
   Genus: {
     speciesCount: (genus) => {
-      return species.filter((s) => (s.genus as any) === genus.name).length;
+      return species.filter((s) => s.genus === genus.name).length;
+    },
+    species: (genus) => {
+      return species.filter((s) => s.genus === genus.name);
     },
   },
   Species: {
-    observations: (t) => {
-      const nodes = observations.filter((o) => o.species?.name === t.name);
+    observations: (species) => {
+      const nodes = observations.filter((o) => o.species === species.name);
       return {
         edges: nodes.map((node) => ({ node })),
         pageInfo: {

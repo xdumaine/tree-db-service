@@ -9,3 +9,5 @@ generates:
     config:
       mappers:
         Genus: ./data/genus#StoredGenus
+        Species: ./data/species#StoredSpecies
+        Observation: ./data/observation#StoredObservation

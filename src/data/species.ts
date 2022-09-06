@@ -1,10 +1,17 @@
-import { Species } from "../types.generated";
+import { LeafType } from "../types.generated";
 
-export const species: Species[] = [
+export interface StoredSpecies {
+  name: string;
+  genus: string;
+  commonNames: string[];
+  leafType: LeafType;
+}
+
+export const species: StoredSpecies[] = [
   {
     name: "alba",
-    genus: "quercus" as any,
+    genus: "quercus",
     commonNames: ["white oak"],
-    leafType: "lobed" as any,
-  } as Species,
+    leafType: LeafType.Lobed,
+  },
 ];
