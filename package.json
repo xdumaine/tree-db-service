@@ -11,10 +11,13 @@
     "start": "open 'http://localhost:4000' && yarn serve"
   },
   "dependencies": {
+    "@graphql-tools/graphql-file-loader": "^7.5.4",
+    "@graphql-tools/load": "^7.7.6",
     "apollo-server": "^3.10.2",
     "apollo-server-core": "^3.10.2",
     "gql-tag": "^1.0.1",
-    "graphql": "^16.6.0"
+    "graphql": "^16.6.0",
+    "tree-db-schema": "^1.0.0"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.12.0",

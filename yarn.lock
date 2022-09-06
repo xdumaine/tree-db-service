@@ -857,7 +857,7 @@
     "@whatwg-node/fetch" "^0.3.0"
     tslib "^2.4.0"
 
-"@graphql-tools/graphql-file-loader@^7.3.7", "@graphql-tools/graphql-file-loader@^7.5.0":
+"@graphql-tools/graphql-file-loader@^7.3.7", "@graphql-tools/graphql-file-loader@^7.5.0", "@graphql-tools/graphql-file-loader@^7.5.4":
   version "7.5.4"
   resolved "https://registry.yarnpkg.com/@graphql-tools/graphql-file-loader/-/graphql-file-loader-7.5.4.tgz#6157747af28a4f9b013c6d4ccaf262d917e69b16"
   integrity sha512-Lw9kCMvwhMUYggrIRcXpGoGmP/NEil61fqvr8iGeHAAlg6qWpY41pF0sLZ4fDbJ10bPzUuqfVQxgCaOkx22/aQ==
@@ -898,7 +898,7 @@
     tslib "^2.4.0"
     unixify "^1.0.0"
 
-"@graphql-tools/load@^7.5.5", "@graphql-tools/load@^7.7.1":
+"@graphql-tools/load@^7.5.5", "@graphql-tools/load@^7.7.1", "@graphql-tools/load@^7.7.6":
   version "7.7.6"
   resolved "https://registry.yarnpkg.com/@graphql-tools/load/-/load-7.7.6.tgz#9aa232a82c0ba3353f22fa0edc80c612ee6b5b80"
   integrity sha512-4dWBZhc14Z7QHICABHaL2MGBRMmJ+tKNYPcQBQQYLo22ArApWCBQ73tkDMhyM9M2GXteJBPsxcwb0LaOau30zQ==
@@ -5020,6 +5020,15 @@ tr46@~0.0.3:
   version "0.0.3"
   resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+
+tree-db-schema@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/tree-db-schema/-/tree-db-schema-1.0.0.tgz#72c133744a6a5aac8ab3d94034f5a830da5ec503"
+  integrity sha512-pzlcJ7NaTPoyAievjJRzeVaGGDTJPoBC+k8e3HZOSwWQLXvm9G8haVqCbesbw6b0VlvHpNFo2ct0iTkgAe26mw==
+  dependencies:
+    "@graphql-codegen/cli" "^2.12.0"
+    graphql "^16.6.0"
+    typescript "^4.8.2"
 
 ts-jest@^28.0.8:
   version "28.0.8"

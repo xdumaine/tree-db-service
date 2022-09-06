@@ -1,10 +1,20 @@
+import { loadSchemaSync } from "@graphql-tools/load";
+import { GraphQLFileLoader } from "@graphql-tools/graphql-file-loader";
+
 import { ApolloServer } from "apollo-server";
-import { typeDefs } from "./schema";
+
 import { ApolloServerPluginLandingPageLocalDefault } from "apollo-server-core";
 import { resolvers } from "./resolvers";
 
+const schema = loadSchemaSync(
+  "./node_modules/tree-db-schema/schema/schema.gql",
+  {
+    loaders: [new GraphQLFileLoader()],
+  }
+);
+
 const server = new ApolloServer({
-  typeDefs,
+  typeDefs: schema,
 
   resolvers,
   cors: {

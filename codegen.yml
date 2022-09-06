@@ -1,6 +1,6 @@
 generates:
   src/types.generated.ts:
-    schema: src/schema.ts
+    schema: node_modules/tree-db-schema/schema/schema.gql
     plugins:
       - typescript
       - typescript-operations
