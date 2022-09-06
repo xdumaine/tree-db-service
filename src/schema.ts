@@ -95,6 +95,7 @@ export const typeDefs = gql`
 
   type Query {
     genera: [Genus!]!
+    species: [Species!]!
     observations: [Observation]!
   }
 `;

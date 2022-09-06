@@ -1,14 +1,10 @@
-const species = [
+import { Species } from "../types.generated";
+
+export const species: Species[] = [
   {
     name: "alba",
-    genus: "quercus",
-    commonName: "white oak",
-    leafType: "lobed",
-  },
-  {
-    name: "phellos",
-    genus: "cuercus",
-    commonName: "willow oak",
-    leafType: "lanceolate",
-  },
+    genus: "quercus" as any,
+    commonNames: ["white oak"],
+    leafType: "lobed" as any,
+  } as Species,
 ];
