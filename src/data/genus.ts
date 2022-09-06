@@ -1,8 +1,11 @@
-import { Genus } from "../types.generated";
+export type StoredGenus = {
+  name: string;
+  commonNames: string[];
+};
 
-export const genera: Genus[] = [
+export const genera: StoredGenus[] = [
   {
     name: "quercus",
     commonNames: ["oak"],
-  } as Genus,
+  },
 ];

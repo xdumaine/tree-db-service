@@ -18,8 +18,19 @@ const queryResolvers: QueryResolvers = {
 export const resolvers: Resolvers = {
   Query: queryResolvers,
   Genus: {
-    speciesCount: (t) => {
-      return species.filter((s) => (s.genus as any) === t.name).length;
+    speciesCount: (genus) => {
+      return species.filter((s) => (s.genus as any) === genus.name).length;
+    },
+  },
+  Species: {
+    observations: (t) => {
+      const nodes = observations.filter((o) => o.species?.name === t.name);
+      return {
+        edges: nodes.map((node) => ({ node })),
+        pageInfo: {
+          hasNextPage: false,
+        },
+      };
     },
   },
 };

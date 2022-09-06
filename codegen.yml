@@ -5,3 +5,7 @@ generates:
       - typescript
       - typescript-operations
       - typescript-resolvers
+
+    config:
+      mappers:
+        Genus: ./data/genus#StoredGenus
